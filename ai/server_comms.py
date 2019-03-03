@@ -106,7 +106,10 @@ class ServerComms(object):
         else:
             messageData = self.server_socket.recv(messageLen)
             logging.debug("*** {}".format(messageData))
-            message_payload = json.loads(messageData.decode('utf-8'))
+            try:
+                message_payload = json.loads(messageData.decode('utf-8'))
+            except:
+                return None
         
         logging.debug('Turned message {} into type {} payload {}'.format(
             binascii.hexlify(messageData),
@@ -135,5 +138,4 @@ class ServerComms(object):
             self.message_types.toString(message_type),
             message_payload,
             binascii.hexlify(message)))
-        
         return self.server_socket.send(message)
