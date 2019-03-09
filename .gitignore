@@ -11,7 +11,8 @@ BotExamples/Scala/ScalaBot/target/
 BotExamples/Scala/ScalaBot/project/
 
 Server*/
-
+servers/
+Server/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -130,3 +131,5 @@ dmypy.json
 .pyre/
 
 .DS_Store
+
+*.hdf5
