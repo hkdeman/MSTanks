@@ -11,4 +11,6 @@ Contains all the materials required to take part in the MS challenge for GUTS 20
 * Server executables for Mac, Linux and Windows.
 * Sample bot code in a variety of languages, including C#, Java and Python.
 * Documentation.
-# MSTanks
+
+# MSTanks (server - Author)
+https://github.com/NickMcCrea/MSTanks
